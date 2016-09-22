@@ -1,21 +1,30 @@
 html {
   background-color: white;
 }
-ul {
+
+html, body {
+  height: 100%;
+}
+
+ul#TopBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+ul#TopBar li {
   float: right;
 }
 
-li a {
+ul#TopBar li a {
   display: block;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 
@@ -34,10 +43,47 @@ li a {
   text-align: center;
 }
 
+
 #SearchBar {
   position: relative;
   top: 180px;
   width: 600px;
   height: 25px;
   border: 1px solid #EAE3DA;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+ul#BottomBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul#BottomBar li.left {
+  float: left;
+}
+
+ul#BottomBar li.right {
+  float: right;
+}
+
+ul#BottomBar li a {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: gray;
+}
+
+ul#BottomBar li a:hover {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: underline;
+  color: gray;
+}
